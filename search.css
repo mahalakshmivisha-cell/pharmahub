@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f9fa;
+    color: #20343d;
+}
+
+
+/* ================= HEADER ================= */
+
+.search-header {
+    height: 95px;
+
+    background: linear-gradient(
+        135deg,
+        #00535a,
+        #008b8d
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+
+    background: white;
+    color: #008f91;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand h2 {
+    font-size: 25px;
+}
+
+.brand span {
+    font-size: 13px;
+    opacity: .9;
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    font-size: 14px;
+}
+
+.divider {
+    width: 1px;
+    height: 25px;
+
+    background: rgba(255,255,255,.35);
+}
+
+
+/* ================= MAIN ================= */
+
+.main-container {
+    width: 92%;
+    max-width: 1350px;
+
+    margin: 32px auto 50px;
+}
+
+
+/* ================= SEARCH CARD ================= */
+
+.search-card {
+    background: white;
+
+    border: 1px solid #dce9eb;
+
+    border-radius: 14px;
+
+    min-height: 290px;
+
+    padding: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.04);
+}
+
+.search-content {
+    width: 75%;
+}
+
+.search-content h1 {
+    font-size: 34px;
+    color: #183b42;
+}
+
+.search-content p {
+    margin-top: 8px;
+
+    color: #6b7c82;
+
+    font-size: 16px;
+}
+
+
+/* SEARCH AREA */
+
+.search-area {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 35px;
+
+    max-width: 900px;
+}
+
+.search-input {
+    flex: 1;
+
+    height: 58px;
+
+    border: 2px solid #c8dcdf;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    transition: .2s;
+}
+
+.search-input:focus-within {
+    border-color: #008f91;
+
+    box-shadow: 0 0 0 3px rgba(0,143,145,.08);
+}
+
+.search-input span {
+    font-size: 28px;
+
+    color: #64777d;
+
+    margin-right: 10px;
+}
+
+.search-input input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+
+    color: #263b42;
+}
+
+.search-area button {
+    width: 150px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #008f91;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.search-area button:hover {
+    background: #006f73;
+}
+
+
+/* MEDICINE IMAGE */
+
+.medicine-image {
+    width: 230px;
+    height: 190px;
+
+    background: #eefafa;
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 30px;
+}
+
+.bottle {
+    font-size: 75px;
+}
+
+.pills {
+    color: #008f91;
+
+    font-size: 18px;
+
+    letter-spacing: 8px;
+
+    margin-top: -10px;
+}
+
+
+/* ================= RESULTS ================= */
+
+.results-card {
+    background: white;
+
+    border: 1px solid #dce9eb;
+
+    border-radius: 14px;
+
+    padding: 28px;
+
+    margin-top: 25px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.04);
+}
+
+.results-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.results-heading h2 {
+    color: #183f46;
+
+    font-size: 23px;
+}
+
+.results-heading p {
+    margin-top: 7px;
+
+    color: #708086;
+}
+
+.results-heading strong {
+    color: #008f91;
+}
+
+.result-count {
+    background: #e9f8f6;
+
+    color: #008582;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    border: 1px solid #dce7e9;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+thead {
+    background: #eef8f8;
+}
+
+th {
+    padding: 17px 15px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    color: #263f46;
+
+    border-bottom: 1px solid #d9e7e9;
+}
+
+td {
+    padding: 19px 15px;
+
+    border-bottom: 1px solid #e7eef0;
+
+    font-size: 15px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f8fdfd;
+}
+
+.medicine-name {
+    color: #007f83;
+
+    font-size: 16px;
+}
+
+.price {
+    color: #263b42;
+
+    font-size: 16px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.view-btn {
+    display: inline-block;
+
+    padding: 10px 17px;
+
+    border: 1px solid #008f91;
+
+    border-radius: 7px;
+
+    color: #008487;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition: .2s;
+}
+
+.view-btn:hover {
+    background: #008f91;
+
+    color: white;
+}
+
+
+/* ================= EMPTY ================= */
+
+.no-results {
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+.empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 12px;
+}
+
+.no-results h3 {
+    font-size: 21px;
+
+    color: #344950;
+}
+
+.no-results p {
+    margin-top: 7px;
+
+    color: #7a898e;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    color: #73848a;
+
+    padding: 25px;
+
+    font-size: 14px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 850px) {
+
+    .search-header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .search-card {
+        padding: 30px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .search-content {
+        width: 100%;
+    }
+
+    .medicine-image {
+        display: none;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area button {
+        width: 100%;
+        height: 52px;
+    }
+
+    .results-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+}

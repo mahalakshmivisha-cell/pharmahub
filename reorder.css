@@ -1,0 +1,201 @@
+/* ================================
+   PharmaHub - Daily Reorder Report
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f8fa;
+    color: #123b5d;
+    min-height: 100vh;
+}
+
+/* ================================
+   Top Header
+   ================================ */
+
+body::before {
+    content: "✚  PharmaHub     Smart Pharmacy";
+    display: block;
+    background: linear-gradient(135deg, #008c91, #00a5a8);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 28px 5%;
+    letter-spacing: 0.3px;
+}
+
+/* ================================
+   Page Title
+   ================================ */
+
+h2 {
+    max-width: 1400px;
+    margin: 45px auto 30px;
+    padding: 0 35px;
+    font-size: 38px;
+    color: #123b5d;
+    position: relative;
+}
+
+h2::before {
+    content: "⚠";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 22px;
+    border-radius: 50%;
+    background: #fff0f1;
+    color: #e63946;
+    font-size: 34px;
+    vertical-align: middle;
+}
+
+/* ================================
+   Table Container Effect
+   ================================ */
+
+table {
+    width: calc(100% - 70px);
+    max-width: 1400px;
+    margin: 0 auto 50px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(20, 70, 90, 0.10);
+}
+
+/* ================================
+   Table Header
+   ================================ */
+
+table tr:first-child {
+    background: linear-gradient(135deg, #008c91, #00a1a4);
+}
+
+th {
+    padding: 22px 25px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+th:last-child {
+    border-right: none;
+}
+
+/* ================================
+   Table Rows
+   ================================ */
+
+td {
+    padding: 22px 25px;
+    font-size: 17px;
+    border-bottom: 1px solid #dce9ed;
+    border-right: 1px solid #dce9ed;
+    background: white;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:not(:first-child):hover td {
+    background: #f5fbfc;
+    transition: 0.2s ease;
+}
+
+/* ================================
+   Quantity
+   ================================ */
+
+td:nth-child(2) {
+    font-weight: bold;
+    color: #e63946;
+}
+
+/* ================================
+   Reorder Level
+   ================================ */
+
+td:nth-child(3) {
+    font-weight: 600;
+    color: #123b5d;
+}
+
+/* ================================
+   Status
+   ================================ */
+
+td:nth-child(4) {
+    color: #e63946 !important;
+    font-weight: 600;
+}
+
+td:nth-child(4)::before {
+    content: "⚠";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #fff0f1;
+    color: #e63946;
+    font-size: 17px;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 768px) {
+
+    body::before {
+        font-size: 22px;
+        padding: 22px 20px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        padding: 0 20px;
+        font-size: 28px;
+    }
+
+    h2::before {
+        width: 52px;
+        height: 52px;
+        font-size: 25px;
+        margin-right: 12px;
+    }
+
+    table {
+        width: calc(100% - 30px);
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 15px 18px;
+        font-size: 14px;
+    }
+}

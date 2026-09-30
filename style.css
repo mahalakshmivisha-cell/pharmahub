@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef8ff;
+}
+
+/* LEFT SIDEBAR */
+
+.sidebar {
+    width: 180px;
+    height: 100vh;
+    background: #0864a8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+}
+
+.menu {
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu span {
+    display: block;
+    margin-top: 7px;
+}
+
+.menu:hover,
+.menu.active {
+    background: #064d82;
+}
+
+
+/* MAIN AREA */
+
+.main {
+    margin-left: 180px;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+    height: 120px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.blue {
+    color: #0864a8;
+}
+
+.green {
+    color: #18a84a;
+}
+
+header p {
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 40px;
+}
+
+.dashboard h2 {
+    color: #0864a8;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    min-height: 130px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0864a8;
+}

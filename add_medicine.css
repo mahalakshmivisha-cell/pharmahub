@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f9fc;
+    color: #174766;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page-container {
+    width: 96%;
+    max-width: 1400px;
+    margin: 18px auto;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 10px 8px 24px;
+}
+
+.brand-icon {
+    width: 50px;
+    height: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #42c5d5,
+        #159bad
+    );
+
+    color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand h1 {
+    color: #124c6c;
+    font-size: 27px;
+}
+
+.brand p {
+    color: #7b94a4;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.medicine-card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.page-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.heading-icon {
+    width: 64px;
+    height: 64px;
+
+    background: #dff7fb;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+}
+
+.page-heading h2 {
+    font-size: 30px;
+    color: #174c6d;
+}
+
+.page-heading p {
+    color: #7893a4;
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    height: 1px;
+
+    background: #dceaf0;
+
+    margin: 20px 0 30px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 48px;
+    row-gap: 28px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.form-group label {
+    display: block;
+
+    color: #155076;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.form-group label span {
+    color: #e34c4c;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-box {
+    height: 51px;
+
+    border: 1.5px solid #cfe1eb;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+
+    background: white;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+.input-box:focus-within {
+    border-color: #19a5b4;
+
+    box-shadow:
+        0 0 0 3px rgba(25, 165, 180, 0.10);
+}
+
+.input-icon {
+    width: 54px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #16799a;
+
+    font-size: 19px;
+
+    border-right: 1px solid #e2edf2;
+}
+
+.input-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 15px;
+
+    font-size: 14px;
+
+    color: #315c73;
+
+    background: transparent;
+}
+
+.input-box input::placeholder {
+    color: #9ab0bd;
+}
+
+.input-box input[type="date"] {
+    color: #7893a4;
+}
+
+.rupee {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 14px;
+
+    margin-top: 38px;
+}
+
+.reset-btn,
+.add-btn {
+    height: 50px;
+
+    padding: 0 28px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Reset */
+
+.reset-btn {
+    background: #f4f9fb;
+
+    border: 1px solid #bcd8e4;
+
+    color: #175677;
+}
+
+.reset-btn:hover {
+    background: #eaf4f7;
+}
+
+
+/* Add */
+
+.add-btn {
+    background: #13a3a4;
+
+    border: none;
+
+    color: white;
+
+    min-width: 190px;
+
+    box-shadow:
+        0 4px 10px rgba(19, 163, 164, 0.20);
+}
+
+.add-btn:hover {
+    background: #078b8d;
+}
+
+
+/* =========================
+   BACK LINK
+========================= */
+
+.back-link {
+    display: inline-block;
+
+    margin-top: 32px;
+
+    color: #0796a4;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #056f79;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .page-container {
+        width: 94%;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .reset-btn,
+    .add-btn {
+        flex: 1;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .medicine-card {
+        padding: 20px;
+    }
+
+    .brand h1 {
+        font-size: 23px;
+    }
+
+    .page-heading h2 {
+        font-size: 24px;
+    }
+
+    .page-heading p {
+        font-size: 13px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .reset-btn,
+    .add-btn {
+        width: 100%;
+    }
+
+}
